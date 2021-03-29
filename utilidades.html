@@ -1,0 +1,126 @@
+</html>
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <title>Cover Template · Bootstrap v4.6</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Computer Store</a>
+      <ul class="nav justify-content-center mb-auto nav-masthead">
+        <li class="nav-item mx-1">
+          <a class="nav-link active" aria-current="page" href="#">Administrador</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link" href="#">Inventario</a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link" href="Utilidades.html">Utilidades</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 login-box">
+          <div class="col-lg-12 login-title">
+            Calculadora de Valor de Venta
+          </div>
+          <div class="col-lg-12 login-form">
+            <div class="col-lg-12 login-form">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text text-white">$</span>
+                </div>
+                <input type="text" id="valor" name="valor" class="form-control text-center" type="number"
+                  placeholder="Valor de compra" aria-label="Dollar amount (with dot and two decimal places)">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text text-white">%</span>
+                </div>
+                <input type="text" id="utilidad" name="utilidad" class="form-control text-center" type="number"
+                  placeholder="Utilidad o Ganancia" aria-label="Dollar amount (with dot and two decimal places)">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text text-white">%</span>
+                </div>
+                <input type="text" id="iva" name="iva" class="form-control text-center" type="number" placeholder="IVA"
+                  aria-label="Dollar amount (with dot and two decimal places)">
+              </div>
+              <div class="col-lg-12 login-title mb-3">
+                <button class="btn btn-sm btn-info text-white" onclick="calcular()">
+                  Calcular
+                </button>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text text-white">$</span>
+                  </div>
+                  <input type="text" id="vlrVenta" name="vlrVenta" class="form-control text-center text-dark" disabled
+                    placeholder="Valor de Venta" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text text-white">$</span>
+                  </div>
+                  <input type="text" id="ganancia" name="ganancia" class="form-control text-center text-dark" disabled
+                    placeholder="Ganancia" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <footer class="mt-auto text-white-50">
+      </footer>
+    </div>
+  </div>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
