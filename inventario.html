@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <title>Cover Template · Bootstrap v4.6</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  
+  <link href="css/cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+    
+  <div class="cover-container d-flex w-100 h-25 p-3 mx-auto flex-column">
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Computer Store</a>
+      <ul class="nav justify-content-center mb-auto nav-masthead">
+          <li class="nav-item mx-1">
+              <a class="nav-link active" aria-current="page" href="#">Administrador</a>
+           </li>
+           <li class="nav-item mx-1">
+             <a class="nav-link" href="inventario.html">Inventario</a>
+          </li>
+           <li class="nav-item mx-1">
+             <a class="nav-link" href="utilidades.html">Utilidades</a>
+           </li>
+      </ul>
+      
+    </nav>
+    
+    <form onsubmit="return false;">
+        <h1 class="h3 mb-3 fw-normal">Registrar Producto</h1>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="codigo" placeholder="Codigo del producto">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="nombre" placeholder="Nombre del producto">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="marca" placeholder="Marca del producto">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="Precio" placeholder="Precio del producto">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="Cantidad" placeholder="Cantidad de compra">
+            
+        </div>
+        <button class="btn-primary" onclick="registrar()">Registrar</button>
+
+    </form>
+
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Codigo producto</th>
+          <th>Nombre del producto</th>
+          <th>Marca del producto</th>
+          <th>Precio del producto</th>
+          <th>Cantidad</th>
+        </tr>
+      </thead>
+      <tbody id="Tab">
+
+      </tbody>
+    </table>
+    <p>------------------------------------------------------------------------------------------</p>
+    <form onsubmit="return false;">
+      <h1 class="h3 mb-3 fw-normal">Actualizar inventario</h1>
+      <form onsubmit="return false">
+        <div class="from-floating">
+            <input type="text" class="from-control" id="Acodigo" placeholder="Actualizar el codigo">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="Anombre" placeholder="Actualizar nombre del producto">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="Amarca" placeholder="Actualizar marca del producto">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="APrecio" placeholder="Actualizar precio del producto">
+            
+        </div>
+        <div class="from-floating">
+            <input type="text" class="from-control" id="ACantidad" placeholder="Actualizar la cantidad comprada">
+        </div>
+        <button class="btn-primary" onclick="">Modificar Producto</button>
+      </form>
+    </form>
+    <p>---------------------------------------------------------------------------------------------</p>
+    <form onsubmit="return false;">
+      <h1 class="h3 mb-3 fw-normal"> Eliminar un producto</h1>
+      <div class="from-floating">
+        <input type="text" class="from-control" id="ECntidad" placeholder="Codigo del producto">
+      </div>
+      <button class="btn-primary" onclick="">Eliminar</button>
+    </form>
+    <p>---------------------------------------------------------------------------------------------</p>
+    <form onsubmit="return false;">
+      <h1 class="h3 mb-3 fw-normal">Buscar Producto</h1>
+      <div class="from-floating">
+        <input type="text" class="from-control" id="BCodigo" placeholder="Codigo a buscar">
+        
+      </div>
+
+      <div class="from-floating">
+        <input type="text" class="from-control" id="BNombre" placeholder="Nombre del producto" disabled>
+      </div>
+
+      <div class="from-floating">
+        <input type="text" class="from-control" id="BMarca" placeholder="Marca del producto" disabled>
+      </div>
+
+      <div class="from-floating">
+        <input type="text" class="from-control" id="BPrecio" placeholder="Precio del producto" disabled>
+      </div>
+
+      <div class="from-floating">
+        <input type="text" class="from-control" id="BCantidad" placeholder="Cantidad de la compra" disabled>
+      </div>
+
+      <button class="btn-primary" onclick="">Buscar</button>
+    </form>
+
+    <p>---------------------------------------------------------------------------------------------</p>
+  </div>
+    <div>
+      <footer class="mt-auto text-white-50">
+      </footer>
+    </div>
+  </div>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
