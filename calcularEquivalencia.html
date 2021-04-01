@@ -1,0 +1,127 @@
+</html>
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <title>Cover Template · Bootstrap v4.6</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+  
+  <div class="cover-container d-flex w-100 h-25 p-3 mx-auto flex-column">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">
+       <img src="imagentienda.png" alt="Logo" style="width:50px;">
+     </a>
+      <a class="navbar-brand" href="index.html">Computer Store</a>
+      <ul class="nav justify-content-center mb-auto nav-masthead">
+       <li class="nav-item mx-1">
+          <a class="nav-link active" aria-current="page" href="#">Administrador</a>
+       </li>
+       <li class="nav-item mx-1">
+          <a class="nav-link" href="inventario.html">Inventario</a>
+       </li>
+       <li class="nav-item mx-1">
+          <a class="nav-link" href="utilidades.html">Utilidades</a>
+          <div class="listaDesplegable">
+            <a href="calcularEquivalencia.html">Calcular Equivalencia</a>
+          </div>
+       </li>
+     </li>
+      </ul>
+   </nav>
+    
+   <div class="container">
+
+    <h1>Calculadora de Equivalencia</h1>
+  
+  
+  <script>
+  function calcular(){
+      
+      var a = document.f1.b1.value;
+      var b = document.f1.b2.value;
+      var r = document.f1.c.value;
+      r=parseFloat(a)*parseFloat(b);
+     document.f1.c.value=r;
+      
+  }
+  
+  </script> 
+  
+  
+  
+  <form name="f1" action="resistencia.html" method="POST">
+      
+  
+   <h3>seleccion primera unidad</h3>     
+  <select name="b1" class="form-control">
+    <option value="1"> 1 megabyte </option>
+    <option value="1"> 1 Gigabyte </option>
+    
+ 
+    
+
+  </select>
+  
+  <br><br>
+  
+   <h3>Seleccione segunda unidad</h3> 
+  <select name="b2" class="form-control">
+    <option value="1000000">byte </option>
+    <option value="1000">Megabyte </option>
+    <option value="1000">kilobyte</option>
+    <option value="0.001"> Gigabyte</option>
+    <option value="0.000 001">Teraby</option>
+    
+    
+    
+  </select>
+  
+  <br><br>
+  
+ 
+   
+      <br><br>
+    <input type="Button" name="" value="calcular" onclick="calcular()" class="btn btn-danger">
+    <br><br>
+    <label for="resultado"> <h3>Resultado</h3></label>
+    <input type="text" class="form-control" id="c" name="c" placeholder=" Resultado">
+  
+      </div>
+  
+        </form>
+  
+  
+  
+  
+        
+  </div>
+</body>

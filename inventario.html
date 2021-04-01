@@ -18,11 +18,13 @@
       -webkit-user-select: none;
       -moz-user-select: none;
       user-select: none;
+      
     }
 
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
+        
       }
     }
   </style>
@@ -37,21 +39,24 @@
 
     
   <div class="cover-container d-flex w-100 h-25 p-3 mx-auto flex-column">
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">
+       <img src="imagentienda.png" alt="Logo" style="width:120px;">
+     </a>
       <a class="navbar-brand" href="index.html">Computer Store</a>
       <ul class="nav justify-content-center mb-auto nav-masthead">
-          <li class="nav-item mx-1">
-              <a class="nav-link active" aria-current="page" href="#">Administrador</a>
-           </li>
-           <li class="nav-item mx-1">
-             <a class="nav-link" href="inventario.html">Inventario</a>
-          </li>
-           <li class="nav-item mx-1">
-             <a class="nav-link" href="utilidades.html">Utilidades</a>
-           </li>
+       <li class="nav-item mx-1">
+          <a class="nav-link active" aria-current="page" href="#">Administrador</a>
+       </li>
+       <li class="nav-item mx-1">
+          <a class="nav-link" href="inventario.html">Inventario</a>
+       </li>
+       <li class="nav-item mx-1">
+          <a class="nav-link" href="utilidades.html">Utilidades</a>
+       </li>
       </ul>
-      
-    </nav>
+   </nav>
+
     
     <form onsubmit="return false;">
         <h1 class="h3 mb-3 fw-normal">Registrar Producto</h1>
@@ -75,12 +80,11 @@
             <input type="text" class="from-control" id="Cantidad" placeholder="Cantidad de compra">
             
         </div>
-        <button class="btn-primary" onclick="registrar()">Registrar</button>
+        <button class="btn btn-danger" onclick="registrar()">Registrar</button>
 
     </form>
 
-    
-    <table>
+    <table >
       <thead>
         <tr>
           <th>Codigo producto</th>
@@ -89,11 +93,13 @@
           <th>Precio del producto</th>
           <th>Cantidad</th>
         </tr>
+       
       </thead>
       <tbody id="Tab">
 
       </tbody>
     </table>
+    <input type="Button" name="" value="Limpiar" onclick="reset()" class="btn btn-primary">
     <p>------------------------------------------------------------------------------------------</p>
     <form onsubmit="return false;">
       <h1 class="h3 mb-3 fw-normal">Actualizar inventario</h1>
@@ -117,7 +123,7 @@
         <div class="from-floating">
             <input type="text" class="from-control" id="ACantidad" placeholder="Actualizar la cantidad comprada">
         </div>
-        <button class="btn-primary" onclick="">Modificar Producto</button>
+        <button class="btn btn-danger" onclick="">Modificar Producto</button>
       </form>
     </form>
     <p>---------------------------------------------------------------------------------------------</p>
@@ -126,7 +132,7 @@
       <div class="from-floating">
         <input type="text" class="from-control" id="ECntidad" placeholder="Codigo del producto">
       </div>
-      <button class="btn-primary" onclick="">Eliminar</button>
+      <button class="btn btn-danger" onclick="">Eliminar</button>
     </form>
     <p>---------------------------------------------------------------------------------------------</p>
     <form onsubmit="return false;">
@@ -152,7 +158,7 @@
         <input type="text" class="from-control" id="BCantidad" placeholder="Cantidad de la compra" disabled>
       </div>
 
-      <button class="btn-primary" onclick="">Buscar</button>
+      <button class="btn btn-danger" onclick="">Buscar</button>
     </form>
 
     <p>---------------------------------------------------------------------------------------------</p>
